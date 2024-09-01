@@ -69,11 +69,11 @@ div[data-testid="collapsedControl"] {
 section[data-testid="stSidebar"] {
     pointer-events: auto;
 }
-/* section.main {
+section.main {
     pointer-events: auto;
     position: relative;
-    top: {{ ui.height }};
-} */
+    /* top: {{ ui.height }}; */
+}
 
 {# style the sidebar button #}
 {% if not options["show_sidebar"] %}
