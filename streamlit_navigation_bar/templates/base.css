@@ -61,6 +61,7 @@ span[data-testid="stMainMenu"] button[data-testid="baseButton-headerNoPadding"]:
 {# make the menu button clickable #}
 div[data-testid="stAppViewContainer"] {
     pointer-events: none;
+    top: {{ ui.height }};
 }
 div[data-testid="collapsedControl"] {
     pointer-events: auto;
@@ -68,11 +69,11 @@ div[data-testid="collapsedControl"] {
 section[data-testid="stSidebar"] {
     pointer-events: auto;
 }
-section.main {
+/* section.main {
     pointer-events: auto;
     position: relative;
     top: {{ ui.height }};
-}
+} */
 
 {# style the sidebar button #}
 {% if not options["show_sidebar"] %}
